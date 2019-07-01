@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: Russian_Roulllete, Configuration: Debug Any CPU ------
+1>C:\Users\Netin\source\repos\Russian Roulllete\Russian Roulllete\Class1.cs(12,20,12,35): warning CS0649: Field 'Roullete.bulleteloadspin' is never assigned to, and will always have its default value 0
+1>C:\Users\Netin\source\repos\Russian Roulllete\Russian Roulllete\Class1.cs(11,20,11,24): warning CS0649: Field 'Roullete.load' is never assigned to, and will always have its default value 0
+1>  Russian_Roulllete -> C:\Users\Netin\source\repos\Russian Roulllete\Russian Roulllete\bin\Debug\Russian Roulllete.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

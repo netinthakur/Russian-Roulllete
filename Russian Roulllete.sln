@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Russian_Roulllete", "Russian Roulllete\Russian_Roulllete.csproj", "{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}.Debug|x64.ActiveCfg = Debug|x64
+		{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}.Debug|x64.Build.0 = Debug|x64
+		{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}.Release|x64.ActiveCfg = Release|x64
+		{694ABFC8-5EAD-48B1-BF0C-13E976C23D66}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C5506E4-DFAA-41C5-B8B3-051438751D55}
+	EndGlobalSection
+EndGlobal
