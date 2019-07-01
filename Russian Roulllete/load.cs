@@ -13,7 +13,7 @@ namespace Russian_Roulllete
 
         }
 
-        public void Spin() // Spin Function will spin Chamber
+        public void Spin()  // Spin Function will spin Chamber
         {
 
         }
