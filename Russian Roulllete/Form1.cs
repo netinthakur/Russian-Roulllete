@@ -103,7 +103,8 @@ namespace Russian_Roulllete
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error Message" + ex.Message);
+                //new Random;
+                MessageBox.Show("chamber is empty ");
 
 
             }
