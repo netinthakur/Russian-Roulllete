@@ -34,10 +34,8 @@ namespace Russian_Roulllete
             //coding for sounds//
             try
             {
-                System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_Roulllete.Properties.Resources.gunshot);
+                System.Media.SoundPlayer snd =new System.Media.SoundPlayer(Russian_Roulllete.Properties.Resources.gunshot);
                 snd.Play();
-
-
 
                 {
                     //new Random;
