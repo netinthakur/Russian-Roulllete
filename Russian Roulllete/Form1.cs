@@ -100,24 +100,14 @@ namespace Russian_Roulllete
             {
                 System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_Roulllete.Properties.Resources.gun);
                 snd.Play();
-                {
-                    //new Random;
-                    MessageBox.Show(" miss");
-
-                   //new Random;
-                    MessageBox.Show("you hit");
-
-                    //new Random;
-                    MessageBox.Show("you win");
-
-                }
-                
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error Message" + ex.Message);
+
+
             }
+            
 
         }
 
