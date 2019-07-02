@@ -41,11 +41,11 @@ namespace Russian_Roulllete
 
                 {
                     //new Random;
-                    MessageBox.Show("you miss shot     play again ");
+                    MessageBox.Show("you miss shot  ");
 
 
                     //new Random;
-                    MessageBox.Show("3more to do ");
+                    MessageBox.Show("you win ");
                 }
 
 
