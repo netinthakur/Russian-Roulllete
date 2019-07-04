@@ -45,17 +45,17 @@ namespace Russian_Roulllete
 
 
 
-            private void Btn_shoutAway_Click(object sender, EventArgs e)
+            private void btn_shout(object sender, EventArgs e)
         {
             Button_Load.Enabled = false;
-            btn_spin.Enabled = false;
-            btn_shout.Enabled = true;
+            this.btn_spin.Enabled = false;
+            this.btn_shout.Enabled = true;
             btn_shoutAway.Enabled = true;
 
             //coding for sounds//
             try
             {
-                System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_Roulllete.Properties.Resources.gunshot);
+                    System.Media.SoundPlayer snd = new System.Media.SoundPlayer(global::Russian_Roulllete.Properties.Resources.gunshot);
                 snd.Play();
 
                 {
@@ -65,7 +65,7 @@ namespace Russian_Roulllete
 
                         loadvalue = 1;
 
-                        btn_spin.Enabled = true;
+                        this.btn_spin.Enabled = true;
                         Button_Load.Enabled = false;
                     }
                 }
@@ -85,8 +85,8 @@ namespace Russian_Roulllete
         {
             Game.Spin(); //Calling Spin function from Game Class
             Button_Load.Enabled = false;
-            btn_spin.Enabled = false;
-            btn_shout.Enabled = true;
+            this.btn_spin.Enabled = false;
+            this.btn_shout.Enabled = true;
             btn_shoutAway.Enabled = true;
             picture_box_Main.Visible = true;
             //below coide helps to show the image
@@ -106,7 +106,7 @@ namespace Russian_Roulllete
 
             Button_Load.Enabled = false;
             Button_Load.Enabled = false;
-                btn_shout.Enabled = true;
+                this.btn_shout.Enabled = true;
                 btn_spin.Enabled = false;
 
                 //  picture_box_Main.Image = Russian_Roulllete.Properties.Resources.spin;
@@ -116,8 +116,8 @@ namespace Russian_Roulllete
             private void Btn_shout_Click(object sender, EventArgs e)
         {
             Button_Load.Enabled = false;
-            btn_spin.Enabled = false;
-            btn_shout.Enabled = false;
+            this.btn_spin.Enabled = false;
+            this.btn_shout.Enabled = false;
             btn_shoutAway.Enabled = true;
             Assembly myAssembly = Assembly.GetExecutingAssembly();
             Stream myStream = myAssembly.GetManifestResourceStream("Russian_Roulllete.Resources.gighyy.gif");
@@ -128,7 +128,7 @@ namespace Russian_Roulllete
             //coding for sounds//
             try
             {
-                System.Media.SoundPlayer snd = new System.Media.SoundPlayer(Russian_Roulllete.Properties.Resources.gunshot);
+                    System.Media.SoundPlayer snd = new System.Media.SoundPlayer(global::Russian_Roulllete.Properties.Resources.gunshot);
                 snd.Play();
 
                 {
@@ -141,13 +141,13 @@ namespace Russian_Roulllete
                             if (score1 == 10)
                             {
                                 MessageBox.Show("you won and your score is 10");
-                                btn_shout.Enabled = false;
+                                this.btn_shout.Enabled = false;
                             }
 
                             else if (score1 == 5)
                             {
                                 MessageBox.Show("you won and your score is 5");
-                                btn_shout.Enabled = false;
+                                this.btn_shout.Enabled = false;
                             }
                         }
 
@@ -160,7 +160,7 @@ namespace Russian_Roulllete
                         if (Count1 == 2 && score1 == 0)
                         {
                             MessageBox.Show("you loss and your score is 0");
-                            btn_shout.Enabled = false;
+                            this.btn_shout.Enabled = false;
 
                         }
 
@@ -177,12 +177,13 @@ namespace Russian_Roulllete
 
 
 
-        private void Button_Load_Click_1(object sender, EventArgs e)
-        {
+
+            private void btnload_Click(object sender, EventArgs e)
+            {
             Game.Load(); //Calling Load function from Game Class//
             Button_Load.Enabled = false; // Disabling Load button
             btn_spin.Enabled = true;
-            btn_shout.Enabled = false;
+            this.btn_shout.Enabled = false;
             btn_shoutAway.Enabled = false;
             //below coide helps to show the image
             //coding for images//
@@ -204,7 +205,7 @@ namespace Russian_Roulllete
 
                     loadvalue = 1;
 
-                    btn_spin.Enabled = true;
+                    this.btn_spin.Enabled = true;
                     Button_Load.Enabled = false;
                 }
              

@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Properties\Play.cs" />
     <Compile Include="Properties\Rules.cs">
       <SubType>Form</SubType>
     </Compile>
