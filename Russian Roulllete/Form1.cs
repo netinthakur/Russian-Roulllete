@@ -207,9 +207,13 @@ namespace Russian_Roulllete
                     btn_spin.Enabled = true;
                     Button_Load.Enabled = false;
                 }
-        }
+             
 
-        private void Form1_Load(object sender, EventArgs e)
+                }
+
+            }
+
+            private void Form1_Load(object sender, EventArgs e)
         {
             Button_Load.Enabled = true; // enabling Load button
             btn_spin.Enabled = false;

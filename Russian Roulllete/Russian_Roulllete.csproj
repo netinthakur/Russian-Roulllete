@@ -67,6 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Properties\Rules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Russian.cs" />
+    <Compile Include="russian1.cs" />
+    <Compile Include="TestCaseAttribute.cs" />
+    <Compile Include="TestFixtureAttribute.cs" />
+    <Compile Include="UnitTesting.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

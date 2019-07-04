@@ -54,7 +54,7 @@ namespace Russian_Roulllete
             this.btn_spin.TabIndex = 6;
             this.btn_spin.Text = "Spin";
             this.btn_spin.UseVisualStyleBackColor = true;
-            this.btn_spin.Click += new System.EventHandler(this.Btn_spin_Click_1);
+            this.btn_spin.Click += new System.EventHandler(this.btn_spin_Click_1);
             // 
             // btn_shout
             // 
@@ -64,7 +64,7 @@ namespace Russian_Roulllete
             this.btn_shout.TabIndex = 7;
             this.btn_shout.Text = "Shoot";
             this.btn_shout.UseVisualStyleBackColor = true;
-            this.btn_shout.Click += new System.EventHandler(this.Btn_shout_Click);
+            this.btn_shout.Click += new System.EventHandler(this.btn_shout_Click);
             // 
             // btn_shoutAway
             // 
@@ -74,7 +74,7 @@ namespace Russian_Roulllete
             this.btn_shoutAway.TabIndex = 8;
             this.btn_shoutAway.Text = "Shoot Away";
             this.btn_shoutAway.UseVisualStyleBackColor = true;
-            this.btn_shoutAway.Click += new System.EventHandler(this.Btn_shoutAway_Click);
+            this.btn_shoutAway.Click += new System.EventHandler(this.btn_shoutAway_Click);
             // 
             // btn_playgame
             // 
@@ -174,6 +174,36 @@ namespace Russian_Roulllete
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void Btn_playgame_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Picture_box_Main_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Button_Load_Click_1(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void btn_spin_Click_1(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void btn_shoutAway_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void btn_shout_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
