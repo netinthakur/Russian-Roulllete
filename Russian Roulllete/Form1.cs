@@ -20,13 +20,12 @@ namespace Russian_Roulllete
         private object btnspin;
         private object btnload;
         private int loadvalue;
-
         public Game()
         {
             InitializeComponent();
         }
 
-        public Form(load game)
+        public Form1(load game)
         {
             Game = game;
         }
@@ -53,8 +52,8 @@ namespace Russian_Roulllete
             private void btn_shout(object sender, EventArgs e)
         {
             Button_Load.Enabled = false;
-            this.btn_spin.Enabled = false;
-            this.btn_shout.Enabled = true;
+            btn_spin.Enabled = false;
+            btn_shout.Enabled = true;
             btn_shoutAway.Enabled = true;
 
             //coding for sounds//
@@ -88,7 +87,7 @@ namespace Russian_Roulllete
 
             private void btn_spin_Click_1(object sender, EventArgs e)
         {
-            form1.Spin(); //Calling Spin function from Game Class
+            Game.spin(); //Calling Spin function from Game Class
             Button_Load.Enabled = false;
             this.btn_spin.Enabled = false;
             this.btn_shout.Enabled = true;
@@ -118,11 +117,11 @@ namespace Russian_Roulllete
 
             }
 
-            private void Btn_shout_Click(object sender, EventArgs e)
+            private void btn_shout_Click(object sender, EventArgs e)
         {
             Button_Load.Enabled = false;
-            this.btn_spin.Enabled = false;
-            this.btn_shout.Enabled = false;
+            btn_spin.Enabled = false;
+            btn_shout.Enabled = false;
             btn_shoutAway.Enabled = true;
             Assembly myAssembly = Assembly.GetExecutingAssembly();
             Stream myStream = myAssembly.GetManifestResourceStream("Russian_Roulllete.Resources.gighyy.gif");
@@ -185,7 +184,7 @@ namespace Russian_Roulllete
 
             private void btnload_Click(object sender, EventArgs e)
             {
-            form1.Load(); //Calling Load function from Game Class//
+            Game.Load(); //Calling Load function from Game Class//
             Button_Load.Enabled = false; // Disabling Load button
             btn_spin.Enabled = true;
             this.btn_shout.Enabled = false;
@@ -227,13 +226,15 @@ namespace Russian_Roulllete
             btn_shoutAway.Enabled = false;
         }
 
-        
+        private void Game_Load(object sender, EventArgs e)
+        {
 
         }
+    }
 
         
         
 
         }
     
-}
+

@@ -151,7 +151,7 @@ namespace Russian_Roulllete
             this.label6.TabIndex = 19;
             this.label6.Text = "shootaway";
             // 
-            // Form1
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -167,9 +167,9 @@ namespace Russian_Roulllete
             this.Controls.Add(this.btn_shoutAway);
             this.Controls.Add(this.btn_shout);
             this.Controls.Add(this.btn_spin);
-            this.Name = "Form1";
+            this.Name = "Game";
             this.Text = "Game";
-          
+            this.Load += new System.EventHandler(this.Game_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picture_box_Main)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
