@@ -13,17 +13,22 @@ using System.Reflection;
 
 namespace Russian_Roulllete
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
         private const bool  = false;
-        load Game = new load();// defining the object of (Game) of  the load class
+         load Game  = new load();// defining the object of (Game) of  the load class
         private object btnspin;
         private object btnload;
         private int loadvalue;
 
-        public Form1()
+        public Game()
         {
             InitializeComponent();
+        }
+
+        public Form(load game)
+        {
+            Game = game;
         }
 
         public int Spinvalue { get; private set; }
@@ -83,7 +88,7 @@ namespace Russian_Roulllete
 
             private void btn_spin_Click_1(object sender, EventArgs e)
         {
-            Game.Spin(); //Calling Spin function from Game Class
+            form1.Spin(); //Calling Spin function from Game Class
             Button_Load.Enabled = false;
             this.btn_spin.Enabled = false;
             this.btn_shout.Enabled = true;
@@ -180,7 +185,7 @@ namespace Russian_Roulllete
 
             private void btnload_Click(object sender, EventArgs e)
             {
-            Game.Load(); //Calling Load function from Game Class//
+            form1.Load(); //Calling Load function from Game Class//
             Button_Load.Enabled = false; // Disabling Load button
             btn_spin.Enabled = true;
             this.btn_shout.Enabled = false;

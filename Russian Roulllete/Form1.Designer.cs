@@ -2,7 +2,7 @@
 
 namespace Russian_Roulllete
 {
-    partial class Form1
+    partial class Game
     {
         /// <summary>
         /// Required designer variable.
@@ -169,7 +169,7 @@ namespace Russian_Roulllete
             this.Controls.Add(this.btn_spin);
             this.Name = "Form1";
             this.Text = "Game";
-            this.Load += new System.EventHandler(this.Form1_load);
+          
             ((System.ComponentModel.ISupportInitialize)(this.picture_box_Main)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
