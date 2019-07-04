@@ -1,4 +1,6 @@
-﻿namespace Russian_Roulllete
+﻿using System;
+
+namespace Russian_Roulllete
 {
     partial class Form1
     {
@@ -167,7 +169,7 @@
             this.Controls.Add(this.btn_spin);
             this.Name = "Form1";
             this.Text = "Game";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Form1_load);
             ((System.ComponentModel.ISupportInitialize)(this.picture_box_Main)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,6 +190,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+
+        public EventHandler Form1_load { get; private set; }
     }
 }
 
