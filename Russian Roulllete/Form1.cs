@@ -81,7 +81,7 @@ namespace Russian_Roulllete
             }
         }
 
-            private void Btn_spin_Click_1(object sender, EventArgs e)
+            private void btn_spin_Click_1(object sender, EventArgs e)
         {
             Game.Spin(); //Calling Spin function from Game Class
             Button_Load.Enabled = false;
@@ -113,7 +113,7 @@ namespace Russian_Roulllete
 
             }
 
-        private void Btn_shout_Click(object sender, EventArgs e)
+            private void Btn_shout_Click(object sender, EventArgs e)
         {
             Button_Load.Enabled = false;
             btn_spin.Enabled = false;
@@ -165,7 +165,7 @@ namespace Russian_Roulllete
                         }
 
 
-            }
+            
             catch (Exception ex)
             {
                 MessageBox.Show("Error Message" + ex.Message);
@@ -221,13 +221,13 @@ namespace Russian_Roulllete
             btn_shoutAway.Enabled = false;
         }
 
-        {
+        
 
         }
 
-        private void Label4_Click(object sender, EventArgs e)
-        {
+        
+        
 
         }
-    }
+    
 }
