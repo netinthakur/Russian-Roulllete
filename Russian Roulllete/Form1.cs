@@ -14,6 +14,7 @@ using System.Reflection;
 namespace Russian_Roulllete
 {
     public partial class Form1 : Form
+
     {
         private const bool a = false;
         load Gameobj = new load();// defining the object of (Game) of  the load class
@@ -25,7 +26,7 @@ namespace Russian_Roulllete
             InitializeComponent();
         }
 
-        public Form1()
+        public load()
         {
             load load = game;
         }
@@ -218,6 +219,7 @@ namespace Russian_Roulllete
 
                     }
                 }
+                
             catch (Exception ex)
             {
                 MessageBox.Show("Error Message" + ex.Message);
