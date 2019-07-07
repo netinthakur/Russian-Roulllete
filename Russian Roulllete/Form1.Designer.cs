@@ -2,7 +2,7 @@
 
 namespace Russian_Roulllete
 {
-    partial class Game
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.

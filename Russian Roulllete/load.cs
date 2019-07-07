@@ -27,5 +27,10 @@ namespace Russian_Roulllete
         {
 
         }
+
+        internal void spin()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

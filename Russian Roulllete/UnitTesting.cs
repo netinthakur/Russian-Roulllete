@@ -18,7 +18,8 @@ namespace Rouelette
         public void Spin()
         {
             russian spin = new russian();
-            Assert.AreEqual(6, spin.Spin_chamber(5));
+            Assert.AreEqual(6,
+                            spin.Spin_chamber(5));
 
             spin.Spin_chamber(5);
         }
