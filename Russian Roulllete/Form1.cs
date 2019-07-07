@@ -26,10 +26,7 @@ namespace Russian_Roulllete
             InitializeComponent();
         }
 
-        public load()
-        {
-            load load = game;
-        }
+       
 
         public int Spinvalue { get; private set; }
         public int Count1 { get; private set; }
@@ -57,41 +54,6 @@ namespace Russian_Roulllete
 
 
 
-            void btn_shout(EventArgs e)
-            {
-                Button_Load.Enabled = false;
-                btn_spin.Enabled = false;
-                btn_shout.Enabled = true;
-                btn_shoutAway.Enabled = true;
-
-                //coding for sounds//
-                try
-                {
-                    System.Media.SoundPlayer snd = new System.Media.SoundPlayer(global::Russian_Roulllete.Properties.Resources.gunshot);
-                    snd.Play();
-
-                    {
-                        // below code is helps to load only 1 bullet.
-                        Play load_value = new Play();
-                        load_value.Load_sound();
-
-                        loadvalue = 1;
-
-                        btn_spin.Enabled = true;
-                        Button_Load.Enabled = false;
-                    }
-                }
-
-
-
-
-#pragma warning disable CS0162 // Unreachable code detected
-                catch (Exception ex)
-#pragma warning restore CS0162 // Unreachable code detected
-                {
-                    MessageBox.Show("Error Message" + ex.Message);
-                }
-            }
 
             void btn_spin_Click_1(object sender, EventArgs e)
             {
@@ -186,7 +148,7 @@ namespace Russian_Roulllete
                 System.Media.SoundPlayer snd = new System.Media.SoundPlayer(global::Russian_Roulllete.Properties.Resources.gunshot);
                 snd.Play();
 
-                {
+                
                     Play ShotObj = new Play();
 
                     int score1 = ShotObj.Shotbullet(loadvalue, Spinvalue);

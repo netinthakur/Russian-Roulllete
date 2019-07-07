@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace Russian_Roulllete
 {
@@ -203,7 +204,40 @@ namespace Russian_Roulllete
 
         private void btn_shout_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+
+            Button_Load.Enabled = false;
+            btn_spin.Enabled = false;
+            btn_shout.Enabled = false;
+            btn_shoutAway.Enabled = true;
+
+            //coding for sounds//
+            try
+            {
+                System.Media.SoundPlayer snd = new System.Media.SoundPlayer(global::Russian_Roulllete.Properties.Resources.gunshot);
+                snd.Play();
+
+                {
+                    // below code is helps to load only 1 bullet.
+                    Play load_value = new Play();
+                    load_value.Load_sound();
+
+                    loadvalue = 1;
+
+                    btn_spin.Enabled = true;
+                    Button_Load.Enabled = false;
+                }
+            }
+
+
+
+
+#pragma warning disable CS0162 // Unreachable code detected
+            catch (Exception ex)
+#pragma warning restore CS0162 // Unreachable code detected
+            {
+                MessageBox.Show("Error Message" + ex.Message);
+            }
+
         }
 
         #endregion
